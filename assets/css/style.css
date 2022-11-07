@@ -711,6 +711,12 @@ input, textarea {
 .l-footer .l-container-fluid {
   width: 1383px;
 }
+@media (min-width: 1920px) {
+  .l-footer .l-row {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
 .l-footer__contact {
   max-width: 100%;
   margin-left: auto;
@@ -1729,6 +1735,7 @@ input, textarea {
     padding-left: 0;
   }
   .p-home__technology-content div a:hover {
+    border-radius: 4px;
     background-color: #34A3FD;
     font-family: "Roboto Condensed";
     padding: 11px 14px 13px;
@@ -1845,6 +1852,7 @@ input, textarea {
 }
 @media (max-width: 767px) {
   .p-home__solution {
+    margin-top: 0;
     padding-top: 27px;
     background: none;
   }
@@ -2010,6 +2018,9 @@ input, textarea {
 }
 @media (max-width: 767px) {
   .p-home__solution-item p {
+    padding-right: 0;
+    width: 252px;
+    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -2053,11 +2064,6 @@ input, textarea {
   padding-right: 12px;
   background-color: #34A3FD;
   opacity: 1;
-}
-@media (max-width: 767px) {
-  .p-home__solution-btn .c-btn {
-    font-weight: 500;
-  }
 }
 .p-home__solution-btn img {
   margin-left: 10px;
@@ -2638,8 +2644,18 @@ input, textarea {
   }
   .p-home__news-slider .slick-list {
     overflow: visible;
-    margin-left: -17px;
+    margin-left: -8px;
     margin-right: -8px;
+    position: relative;
+  }
+  .p-home__news-slider .slick-list::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 10000%;
+    background: #001530;
+    right: 100%;
+    bottom: 0;
   }
   .p-home__news-slider .slick-slide {
     padding: 0 8px;
@@ -2789,8 +2805,18 @@ input, textarea {
 }
 .p-home__fields-slider .slick-list {
   overflow: visible;
-  margin-left: -17px;
+  margin-left: -8px;
   margin-right: -8px;
+  position: relative;
+}
+.p-home__fields-slider .slick-list::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 10000%;
+  background: #001530;
+  right: 100%;
+  bottom: 0;
 }
 .p-home__fields-slider .slick-slide {
   padding: 0 8px;
@@ -3323,6 +3349,8 @@ input, textarea {
   font-size: 20px;
   line-height: 32px;
   color: #fff;
+  width: 688px;
+  max-width: 100%;
 }
 @media (max-width: 767px) {
   .p-technology__box__desc p {
@@ -3492,6 +3520,7 @@ input, textarea {
 }
 .p-sdk__big-banner__content-handle .c-btn {
   padding: 12px 21px;
+  color: #fff;
 }
 @media (max-width: 1199px) {
   .p-sdk__big-banner__content {
@@ -3629,6 +3658,7 @@ input, textarea {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
+  color: #fff;
 }
 .p-sdk__face__content {
   display: -webkit-box;
@@ -3670,12 +3700,19 @@ input, textarea {
   }
 }
 .p-sdk__face__content__box {
-  padding: 52px 25px 25px;
+  padding: 43px 25px 25px;
   position: absolute;
   top: 0;
 }
 .p-sdk__face__content__box-icon {
   margin-bottom: 24px;
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .p-sdk__face__content__box-title {
   margin-bottom: 17px;
@@ -3940,6 +3977,11 @@ input, textarea {
     line-height: 24px;
   }
 }
+@media (max-width: 767px) {
+  .p-sdk__advantages__box__content-title h3 {
+    margin-bottom: 8px;
+  }
+}
 .p-sdk .slick-arrow {
   display: none !important;
 }
@@ -4010,6 +4052,28 @@ input, textarea {
 .p-solution__box {
   margin-bottom: 55px;
 }
+.p-solution__box:nth-child(2) {
+  margin-bottom: 4px;
+}
+.p-solution__box:nth-child(2) .p-solution__box__content {
+  margin-top: 53px;
+}
+.p-solution__box:nth-child(3) {
+  margin-bottom: 92px;
+}
+.p-solution__box:nth-child(3) .p-solution__box__content {
+  position: relative;
+  top: 29px;
+}
+.p-solution__box:nth-child(4) {
+  margin-bottom: 27px;
+}
+.p-solution__box:nth-child(4) .p-solution__box__content {
+  margin-top: 36px;
+}
+.p-solution__box:nth-child(5) .p-solution__box__content {
+  margin-top: 70px;
+}
 @media (max-width: 767px) {
   .p-solution__box {
     margin-bottom: 60px;
@@ -4064,7 +4128,7 @@ input, textarea {
   }
 }
 .p-solution__box__content {
-  margin-top: 97px;
+  margin-top: 103px;
 }
 @media (max-width: 767px) {
   .p-solution__box__content {

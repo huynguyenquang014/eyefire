@@ -361,6 +361,7 @@
                         font-family: 'Roboto Condensed';
                         padding-left: 0;
                         &:hover {
+                            border-radius: 4px;
                             background-color: $cBase;
                             font-family: 'Roboto Condensed';
                             padding: 11px 14px 13px;
@@ -458,6 +459,7 @@
         background: url("../img/home/bg_solution.jpg") no-repeat center 10px;
         background-size: cover;
         @include brSpLandscape {
+            margin-top: 0;
             padding-top: 27px;
             background: none;
         }
@@ -599,6 +601,9 @@
                 margin-bottom: 13px;
                 padding-right: 35px;
                 @include brSpLandscape {
+                    padding-right: 0;
+                    width: 252px;
+                    max-width: 100%;
                     overflow: hidden;
                     text-overflow: ellipsis;
                     display: -webkit-box;
@@ -631,9 +636,6 @@
                     padding-right: 12px;
                     background-color: $cBase;
                     opacity: 1;
-                }
-                @include brSpLandscape {
-                    font-weight: 500;
                 }
             }
             img {
@@ -1114,8 +1116,18 @@
                 }
                 .slick-list {
                     overflow: visible;
-                    margin-left: -17px;
+                    margin-left: -8px;
                     margin-right: -8px;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        height: 100%;
+                        width: 10000%;
+                        background: #001530;
+                        right: calc(100%);
+                        bottom: 0;
+                    }
                 }
                 .slick-slide {
                     padding: 0 8px;
@@ -1251,8 +1263,18 @@
             }
             .slick-list {
                 overflow: visible;
-                margin-left: -17px;
+                margin-left: -8px;
                 margin-right: -8px;
+                position: relative;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    height: 100%;
+                    width: 10000%;
+                    background: #001530;
+                    right: calc(100%);
+                    bottom: 0;
+                }
             }
             .slick-slide {
                 padding: 0 8px;

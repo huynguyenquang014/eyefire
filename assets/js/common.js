@@ -122,7 +122,7 @@ $(document).ready(function(){
     });
 
     // products
-    $('.slider-content').slick({
+    $('.slider-content').not('.slick-initialized').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -168,6 +168,7 @@ $(document).ready(function(){
         $(this).addClass("slick-active")
     })
     
+    
 
     //back to top
     var btnBack = $('.c-back-to-top');
@@ -187,6 +188,8 @@ $(document).ready(function(){
 
     changeTextDots();
 })
+
+
 
 function changeTextDots(){
     //change text dots progress slider

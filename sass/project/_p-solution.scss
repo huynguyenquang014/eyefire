@@ -17,6 +17,30 @@
     }
     &__box {
         margin-bottom: 55px;
+        &:nth-child(2){
+            margin-bottom: 4px;;
+            .p-solution__box__content{
+                margin-top: 53px;
+            }
+        }
+        &:nth-child(3){
+            margin-bottom: 92px;
+            .p-solution__box__content{
+                position: relative;
+                top: 29px;
+            }
+        }
+        &:nth-child(4){
+            margin-bottom: 27px;
+            .p-solution__box__content{
+                margin-top: 36px;
+            }
+        }
+        &:nth-child(5){
+            .p-solution__box__content{
+                margin-top: 70px;
+            }
+        }
         @include brSpLandscape {
             margin-bottom: 60px;
         }
@@ -50,7 +74,7 @@
             }
         }
         &__content {
-            margin-top: 97px;
+            margin-top: 103px;
             @include brSpLandscape {
                 margin-top: 32px;
             }

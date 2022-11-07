@@ -5,6 +5,11 @@
     .l-container-fluid {
         width: 1383px;
     }
+    .l-row{
+        @media (min-width: 1920px){
+            flex-wrap: nowrap;
+        }
+    }
     &__contact {
         max-width: 100%;
         margin-left: auto;
