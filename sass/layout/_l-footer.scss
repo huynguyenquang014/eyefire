@@ -1,0 +1,468 @@
+.l-footer {
+    background-color: #001530;
+    margin-top: -1px;
+    padding-top: 1px;
+    .l-container-fluid {
+        width: 1383px;
+    }
+    &__contact {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        @include brSpLandscape {
+            padding: 32px 0 40px;
+        }
+        &__inner {
+            width: 606px;
+            padding: 25px 0 38px 0;
+            width: 1110px;
+            max-width: 100%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            background: url('../img/common/bg_contact.png') no-repeat center;
+            background-size: cover;
+            border: 2px solid #4291F6;
+            border-radius: 4px;
+            @include brSpLandscape {
+                padding: 22px 0 32px 0;
+                border-radius: 8px;
+            }
+            h3 {
+                font-family: 'Roboto Condensed';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 56px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+                @include brSpLandscape {
+                    font-size: 24px;
+                    line-height: 28px;
+                }
+            }
+            p {
+                margin-top: 8px;
+                font-family: 'Roboto Condensed';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 32px;
+                text-align: center;
+                color: #FFFFFF;
+                @include brSpLandscape {
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-top: 15px;
+                }
+            }
+        }
+        &__group-btn {
+            text-align: center;
+            margin-top: 56px;
+            @include brSpLandscape {
+                margin-top: 32px;
+            }
+            .c-btn {
+                font-family: 'Roboto Condensed';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                color: $textColor;
+                border-radius: 2px;
+                width: 238px;
+                height: 48px;
+                gap: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    &__content {
+        background: url("../img/common/bg_footer.jpg") no-repeat center;
+        background-size: cover;
+        @include brSpLandscape {
+            background: url("../img/common/bg_footer-sp.jpg") no-repeat center;
+            background-size: cover;
+        }
+    }
+    &__main {
+        margin-top: -108px;
+        padding: 216px 0 56px;
+        @include brSpLandscape {
+            margin-top: 0;
+            padding: 42px 0 0;
+        }
+        &__header {
+            display: flex;
+            flex-wrap: wrap;
+            padding-bottom: 25px;
+            @include brTablet {
+                display: block;
+                padding-bottom: 56px;
+            }
+            @include brSpLandscape {
+                text-align: center;
+            }
+            &__logo {
+                flex: 463.88px;
+                @include brSpLandscape {
+                    flex: 100%;
+                }
+            }
+            &__slogan {
+                flex: calc(100% - 463.88px);
+                @include brSpLandscape {
+                    flex: 100%;
+                }
+                p {
+                    font-family: "Roboto Condensed";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: -0.02em;
+                    color: #FFFFFF;
+                    margin-top: 16px;
+                    @include brSpLandscape {
+                        margin-top: -7px;
+                        font-size: 18px;
+                        line-height: 32px;
+                    }
+                }
+            }
+        }
+        &__logo {
+            margin-bottom: 41px;
+            @include brSpLandscape {
+                margin-bottom: 22px;
+            }
+            img {
+                @include brSpLandscape {
+                    width: 167.6px;
+                }
+            }
+        }
+        .l-row {
+            >div {
+                @include brTablet {
+                    flex: 50%;
+                    max-width: 50%;
+                }
+                @include brSpLandscape {
+                    flex: 100%;
+                    max-width: 100%;
+                    margin-bottom: 13px;
+                }
+                &.l-footer__main__office {
+                    margin-bottom: 13px;
+                    @include brSpLandscape {
+                        padding-right: 5px;
+                    }
+                }
+                &.l-footer__main__service {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        &__office {
+            .l-footer__main__content>ul>li {
+                margin-bottom: 16px;
+                @include brSpLandscape {
+                    margin-bottom: 17px;
+                }
+            }
+            @include brTablet {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        &__menu {
+            padding-left: calc(147/1920*100vw);
+            @include brSmallPc {
+                padding-left: 15px;
+            }
+            @include brSpLandscape {
+                margin-top: 17px;
+            }
+        }
+        &__solution {
+            margin-left: calc(97/1920*100vw);
+            @include brTablet {
+                margin-left: 0;
+                @include brSpLandscape {
+                    margin-top: 30px;
+                }
+            }
+        }
+        &__technology {
+            margin-left: calc(125/1920*100vw);
+            @include brTablet {
+                margin-left: 0;
+            }
+            @include brSpLandscape {
+                margin-top: 15px;
+            }
+        }
+        &__title {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -0.02em;
+            color: #FFFFFF;
+            position: relative;
+            padding-bottom: 11px;
+            margin-bottom: 40px;
+            @include brTablet {
+                font-size: 20px;
+                padding-bottom: 18px;
+                line-height: 23px;
+                margin-bottom: 30px;
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 24px;
+                height: 5px;
+                border-radius: 5px;
+                background-color: #4291F6;
+                @include brTablet {
+                    width: 30px;
+                    height: 5px;
+                }
+            }
+        }
+        &__content {
+            &-rules {
+                margin-top: 53px;
+                &.item-sp {
+                    @include brSpLandscape {
+                        margin-top: 30px;
+                        padding-left: 15px;
+                        padding-bottom: 21px;
+                    }
+                }
+            }
+            &__item {
+                margin-top: 21px;
+                @include brTablet {
+                    margin-top: 23px;
+                }
+                h5 {
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #F9F9F9;
+                    margin-bottom: 7px;
+                    @include brTablet {
+                        margin-bottom: 4px;
+                    }
+                }
+                p {
+                    font-family: 'Roboto Condensed';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #F9F9F9;
+                    opacity: 0.68;
+                    &.email {
+                        display: flex;
+                        gap: 10px;
+                        align-items: center;
+                        padding-top: 13px;
+                    }
+                }
+            }
+            &__keep {
+                margin-top: 88px;
+                @include brTablet {
+                    margin-bottom: 50px;
+                }
+                &.item-sp {
+                    @include brSpLandscape {
+                        margin-top: 15px;
+                        padding-left: 15px;
+                    }
+                }
+                &-item {
+                    margin-top: -18px;
+                    ul {
+                        display: flex;
+                        flex-wrap: wrap;
+                        align-items: center;
+                        gap: 13px;
+                    }
+                }
+            }
+            >ul {
+                >li {
+                    display: flex;
+                    margin-bottom: 17px;
+                    padding-left: 15px;
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        background: rgba($color: #fff, $alpha: 0.68);
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        left: 0;
+                        top: 9px;
+                    }
+                    @include brSpLandscape {
+                        margin-bottom: 15px;
+                    }
+                    >a {
+                        font-family: 'Roboto Condensed';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #FFFFFF;
+                        opacity: 0.68;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    .icon {
+                        min-width: 37px;
+                        &-envelop {
+                            position: relative;
+                            top: 3px;
+                        }
+                    }
+                    h5 {
+                        font-size: 16px;
+                        line-height: 25px;
+                        font-weight: 400;
+                        letter-spacing: 0.01em;
+                        color: #FFFFFF;
+                        @include brSpLandscape {
+                            font-size: 14px;
+                            line-height: 19px;
+                            margin-bottom: 12px;
+                        }
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 25px;
+                        letter-spacing: 0.01em;
+                        color: #FFFFFF;
+                        opacity: 0.68;
+                        @include brSpLandscape {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        &__social-link {
+            margin-bottom: 44px;
+            @include brSpLandscape {
+                margin-bottom: 17px;
+            }
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                @include brSpLandscape {
+                    margin-top: -7px;
+                }
+                li {
+                    +li {
+                        margin-left: 14px;
+                        @include brSpLandscape {
+                            margin-left: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        &__link {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 25px;
+            letter-spacing: 0.01em;
+            text-decoration-line: underline;
+            color: #FFFFFF;
+            font-size: 14px;
+            display: block;
+            text-decoration: underline;
+            margin-bottom: 12px;
+            @include brSpLandscape {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &__copyright {
+        padding: 34px 0 30px;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        position: relative;
+        .l-container-fluid {
+            position: relative;
+        }
+        @include brSpLandscape {
+            padding: 24px 0 30px;
+        }
+        &__logo {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 19px;
+            @include brSpLandscape {
+                top: calc(50% - 66px);
+                img {
+                    width: 153px;
+                }
+            }
+            &--right {
+                left: unset;
+                right: 91px;
+                @include brSpLandscape {
+                    right: 53px;
+                    img {
+                        width: 93px;
+                    }
+                }
+            }
+        }
+        p {
+            font-family: 'Roboto Condensed';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+            text-align: center;
+            br {
+                display: none;
+                @include brSpLandscape {
+                    display: inline-block;
+                }
+            }
+            @include brTablet {
+                font-size: 14px;
+            }
+            @include brSpLandscape {
+                font-size: 16px;
+                margin-top: 59px;
+                text-align: center;
+            }
+        }
+    }
+}

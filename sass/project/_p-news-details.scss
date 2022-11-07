@@ -1,0 +1,201 @@
+#page-news-details{
+    background-color: #fff;
+    .l-footer{
+        background-color: #fff;
+    }
+}
+.p-news-details{
+    padding: 54px 0 165px;
+    @include brSpLandscape{
+        padding-bottom: 65px;       
+    }
+    *{
+        color: rgba(0, 0, 0, 0.8);
+    }
+    &__sidebar{
+        margin-top: 100px;
+        @include brTablet{
+            flex: 0 0 40%;
+            max-width: 40%;
+        }
+        @include brSpLandscape{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .p-news-details__title{
+            margin-bottom: 14px;
+        }
+    }
+    &__related{
+        &-item{
+            display: flex;
+            border-top: 0.5px solid rgba(0, 0, 0, 0.56);
+            padding-top: 20px;
+        }
+        &-info{
+            flex: calc(100% - 108px);
+            max-width: calc(100% - 108px);
+            padding-right: 20px;
+            h5{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: -0.02em;
+                margin-bottom: 9px;
+                margin-top: -4px;
+            }
+        }
+        &-cate{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.02em;
+            color: #707070;
+            margin-bottom: -1px;
+        }
+        &-time{
+            display: inline-flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.02em;
+            color: rgba(0, 0, 0, 0.56);
+            margin-bottom: 16px;
+            padding-bottom: 5px;
+            span{
+                position: relative;
+                top: 3px;
+            }
+            img{
+                margin-right: 10px;
+            }
+        }
+        &-img{
+            flex: 108px;
+            max-width: 108px;
+        }
+    }
+    &__main{
+        @include brTablet{
+            flex: 0 0 60%;
+            max-width: 60%;
+        }
+        @include brSpLandscape{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        h4{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 38px;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            @include brSpLandscape{
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+        h5{
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+        }
+    }
+    &__btn-back{
+        margin-bottom: 67px;
+        @include brSpLandscape{
+            margin-bottom: 50px;   
+        }
+        a{
+            display: inline-flex;
+            align-items: center;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            letter-spacing: -0.02em;
+            @include brSpLandscape{
+                font-size: 20px;
+            }
+            img{
+                margin-right: 30px;
+            }
+        }
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: -0.02em;
+        color: #0B3B79;
+        position: relative;
+        padding-right: 10px;
+        margin-bottom: 24px;
+        @include brSpLandscape{
+            font-size: 22px;
+            line-height: 32px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -26px;
+            width: 66px;
+            height: 10px;
+            background: #34A3FD;
+            border-radius: 16px;
+        }
+    }
+    &__category{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+        margin-bottom: 12px;
+        @include brSpLandscape{
+            font-size: 14px;   
+        }
+    }
+    &__time{
+        display: inline-flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+        color: rgba(0, 0, 0, 0.56);
+        margin-bottom: 16px;
+        @include brSpLandscape{
+            font-size: 12px;   
+        }
+        img{
+            margin-right: 10px;
+        }
+    }
+    &__img-cover{
+        margin-top: 43px;
+        margin-bottom: 24px;
+        p{
+            font-size: 16px;
+            line-height: 38px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            margin-top: 14px;
+            @include brSpLandscape{
+                line-height: 26px;
+            }
+        }
+    }
+    &__author{
+        margin-top: 24px;
+    }
+}

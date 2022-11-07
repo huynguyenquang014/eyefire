@@ -1,0 +1,120 @@
+@charset "utf-8";
+// import font
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700');
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@500');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Overpass:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: "UTM Bebas";
+    src: url("../font/Bebas-Regular.ttf");
+}
+
+// ============================================================
+// 設定
+// ============================================================
+// HTML5の場合は「true」
+$html5: true;
+// compass ブラウザサポート
+$legacy-support-for-ie6: true;
+$legacy-support-for-ie7: true;
+$experimental-support-for-webkit: true;
+$experimental-support-for-mozilla: true;
+$experimental-support-for-opera: true;
+$experimental-support-for-microsoft: true;
+$experimental-support-for-khtml: false;
+//ie9用 svg
+$experimental-support-for-svg: true;
+// 画像パス
+$imgPath: "../images/";
+// commonフォルダ内の画像のパス
+$commonImgPath: "../common/images/";
+// ページの全体の横幅
+$baseWidth: 1000px;
+// 標準font-family
+$font-family: 'Roboto Condensed',
+sans-serif;
+// 標準行間
+$lineHeight: 100%;
+$lineHeightText:1.6;
+$lineHeightText2:1.8;
+// カラー
+$cBase:#34A3FD;
+$cAccent:#1DA1F2;
+// 標準テキストカラー
+$textColor: #fff;
+// 標準リンクカラー
+$linkColor: $cBase;
+$linkColor_visit: #cc9999;
+$linkColor_active: #cc9999;
+$linkColor_hover: #cc9999;
+// ============================================================
+// common
+// ============================================================
+html {
+    overflow-x: hidden;
+}
+
+body {
+    color: $textColor;
+    font-family: $font-family;
+    font-feature-settings: "halt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background: #001530;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: all .2s ease;
+    display: inline-block;
+    &:hover {
+        opacity: .6;
+    } //hover
+} //a
+img {
+    vertical-align: bottom;
+}
+
+img {
+    height: auto;
+}
+
+table {
+    width: 100%;
+}
+
+input,
+button {
+    font-family: inherit;
+    &:focus-visible {
+        outline: none;
+        box-shadow: none;
+    }
+}
+
+button,
+select {
+    cursor: pointer;
+}
+
+input {
+    appearance: none;
+}
+
+a:focus,
+input:focus {
+    outline: none;
+}
+
+.w-100 {
+    width: 100%;
+}

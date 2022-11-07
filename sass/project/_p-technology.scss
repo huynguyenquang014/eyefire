@@ -1,0 +1,292 @@
+.p-technology {
+    position: relative;
+    &__inner {}
+    &__main {
+        position: relative;
+        margin-top: -219px;
+        @include brSmallPc {
+            margin-top: -100px;
+        }
+        @include brTablet {
+            margin-top: -90px;
+        }
+        @include brSpLandscape {
+            margin-top: -350px;
+        }
+    }
+    &__box {
+        display: flex;
+        gap: calc(165/1920*100vw);
+        flex-wrap: wrap;
+        @include brTablet {
+            // gap: 65px;
+        }
+        @include brSpLandscape {
+            display: block;
+        }
+        &:nth-child(3) {
+            margin-top: calc(-305/1920*100vw);
+            align-items: center;
+            .p-technology__box {
+                &__inner {
+                    margin-top: -203px;
+                }
+                &__content {
+                    &__img {
+                        margin-top: 0;
+                    }
+                }
+            }
+            @include brTablet {
+                margin-top: 50px;
+            }
+            @include brSpLandscape {
+                margin-top: 175px;
+            }
+        }
+        &:nth-child(4) {
+            &.p-technology__box {
+                &--right {
+                    margin-top: calc(-322/1920*100vw);
+                    @include brTablet {
+                        margin-top: -50px;
+                    }
+                    @include brSpLandscape {
+                        margin-top: -176px;
+                    }
+                    .p-technology__box__inner {
+                        margin-top: 71px;
+                    }
+                }
+            }
+        }
+        &:nth-child(5) {
+            margin-top: calc(-354/1920*100vw);
+            align-items: center;
+            .p-technology__box {
+                &__inner {
+                    margin-top: -198px;
+                }
+                &__content {
+                    &__img {
+                        margin-top: 0;
+                    }
+                }
+            }
+            @include brTablet {
+                margin-top: 198px;
+            }
+        }
+        &:nth-child(6) {
+            margin-top: calc(-472/1920*100vw);
+            .p-technology__box__inner {
+                margin-top: 208px;
+                @include brTablet {
+                    margin-top: -68px;
+                }
+            }
+            @include brTablet {
+                margin-top: 60px;
+            }
+            @include brSpLandscape {
+                margin-top: -175px;
+            }
+        }
+        &:nth-child(7) {
+            margin-top: calc(-367/1920*100vw);
+            align-items: center;
+            .p-technology__box__inner {
+                margin-top: -226px;
+            }
+            @include brTablet {
+                margin-top: 180px;
+            }
+            @include brSpLandscape {
+                margin-top: 261px;
+            }
+        }
+        &__image {
+            flex: calc(50% - (82.5/1920*100vw));
+            max-width: calc(50% - (82.5/1920*100vw));
+            position: relative;
+            img {
+                margin-top: -40px;
+            }
+            @include brSpLandscape {
+                flex: 100%;
+                max-width: 100%;
+                img {
+                    margin-top: -56px;
+                }
+            }
+        }
+        &__inner {
+            flex: calc(50% - (82.5/1920*100vw));
+            max-width: calc(50% - (82.5/1920*100vw));
+            @include brSpLandscape {
+                flex: 100%;
+                max-width: 100%;
+                padding: 0 24px;
+            }
+        }
+        &__title {
+            h3 {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 48px;
+                background: linear-gradient(180deg, #4291F6 32.76%, rgba(255, 255, 255, 0.68) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                @include brSpLandscape {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: $textColor;
+                    background: none;
+                    -webkit-background-clip: unset;
+                    -webkit-text-fill-color: unset;
+                    background-clip: unset;
+                }
+            }
+        }
+        &__content {
+            text-align: left;
+            max-width: 100%;
+            margin-top: -13px;
+            &__img {
+                margin-top: 61px;
+                margin-left: -35px;
+                @include brSpLandscape {
+                    // margin-left: 0px;
+                    img {
+                        width: 120px;
+                    }
+                }
+            }
+        }
+        &__desc {
+            margin-top: 24px;
+            @include brSpLandscape {
+                margin-top: 10px;
+            }
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+                color: $textColor;
+                @include brSpLandscape {
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &__option {
+            margin-top: 24px;
+            @include brSpLandscape {
+                margin-top: 17px;
+            }
+            ul {
+                li {
+                    position: relative;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    margin-bottom: 16px;
+                    padding-left: 22px;
+                    width: 489px;
+                    max-width: 100%;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 3px;
+                        height: 3px;
+                        border-radius: 50%;
+                        background: $textColor;
+                        left: 7px;
+                        top: 9px;
+                    }
+                    @include brSpLandscape {
+                        font-size: 14px;
+                        line-height: 20px;
+                        padding-left: 12px;
+                        margin-bottom: 8px;
+                        &::after {
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &--right {
+            margin-top: -344px;
+            @include brTablet {
+                margin-top: 60px;
+            }
+            @include brSpLandscape {
+                margin-top: -261px;
+            }
+            .p-technology {
+                &__box {
+                    &__inner {
+                        flex: calc(50% - 150px);
+                        margin-top: 168px;
+                        @include brTablet {
+                            margin-top: -68px;
+                        }
+                    }
+                    &__image {
+                        text-align: end;
+                    }
+                    &__content {
+                        text-align: end;
+                        margin-left: auto;
+                        margin-top: 35px;
+                        @include brSpLandscape {
+                            margin-top: 14px;
+                        }
+                        &__img {
+                            text-align: end;
+                            margin-right: -32px;
+                            @include brSpLandscape {
+                                img {
+                                    +img {
+                                        margin-left: auto;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &__desc {
+                        width: 489px;
+                        margin-left: auto;
+                        max-width: 100%;
+                    }
+                    &__option {
+                        ul {
+                            li {
+                                margin-left: auto;
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.item-sp {
+    display: none;
+    @include brSpLandscape {
+        display: block;
+    }
+}
+
+.item-pc {
+    @include brSpLandscape {
+        display: none;
+    }
+}
