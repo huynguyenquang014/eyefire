@@ -1,5 +1,10 @@
 .p-technology {
     position: relative;
+    .c-big-banner__content {
+        @include brSpLandscape {
+            top: calc(50% - 211px);
+        }
+    }
     &__inner {}
     &__main {
         position: relative;
@@ -116,7 +121,7 @@
                 flex: 100%;
                 max-width: 100%;
                 img {
-                    margin-top: -56px;
+                    margin-top: -36px;
                 }
             }
         }
