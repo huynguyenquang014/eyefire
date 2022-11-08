@@ -3667,6 +3667,7 @@ input, textarea {
   .p-sdk__eyefire__content__box-desc h4 {
     font-size: 16px;
     line-height: 32px;
+    font-weight: 500;
   }
 }
 .p-sdk__face {
@@ -4003,7 +4004,6 @@ input, textarea {
   .p-sdk__advantages__box__content-desc p {
     font-size: 16px;
     line-height: 24px;
-    font-weight: 500;
   }
 }
 @media (max-width: 767px) {
@@ -4765,6 +4765,21 @@ input, textarea {
   }
   .p-products__block .slick-dots li button img {
     display: none;
+  }
+}
+@media (max-width: 555px) {
+  .p-products .p-home__products-features li:nth-child(3)::before {
+    bottom: -4px !important;
+  }
+}
+@media (max-width: 490px) {
+  .p-products .p-home__products-features li:nth-child(3)::before {
+    bottom: 10px !important;
+  }
+}
+@media (max-width: 390px) {
+  .p-products .p-home__products-features li:nth-child(3)::before {
+    bottom: 16px !important;
   }
 }
 
@@ -5938,8 +5953,8 @@ input, textarea {
 .c-big-banner__content p {
   margin-top: 49px;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 32px;
   color: #FFFFFF;
 }
 @media (max-width: 1199px) {

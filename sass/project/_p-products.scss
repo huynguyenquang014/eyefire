@@ -432,4 +432,15 @@
             }
         }
     }
+    .p-home__products-features li:nth-child(3)::before {
+        @media (max-width: 555px) {
+            bottom: -4px !important;
+        }
+        @media (max-width:490px) {
+            bottom: 10px !important;
+        }
+        @media (max-width:390px) {
+            bottom: 16px !important;
+        }
+    }
 }
