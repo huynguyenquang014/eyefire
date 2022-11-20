@@ -877,9 +877,6 @@
                     &::before {
                         height: 53.84px;
                         @include brSpLandscape {
-                            bottom: 0px;
-                        }
-                        @include brSpPortrait {
                             bottom: 8px;
                         }
                     }
@@ -900,9 +897,6 @@
                     z-index: 1;
                     @include brSpLandscape {
                         left: 26px;
-                        bottom: -13px;
-                    }
-                    @media (max-width:375px) {
                         bottom: -4px;
                     }
                 }
@@ -1385,9 +1379,6 @@
         padding: 142px 0 248px;
         background: url("../img/home/bg_partner.jpg") no-repeat center;
         background-size: cover;
-        @include brTablet {
-            padding: 142px 0 148px
-        }
         @include brSpLandscape {
             background: url("../img/home/bg_partner-sp.jpg") no-repeat center;
             background-size: cover;
@@ -1451,9 +1442,6 @@
         background: url("../img/home/bg_integrated.jpg") no-repeat center;
         background-size: cover;
         padding: 163px 0 335px;
-        @include brTablet {
-            padding: 24px 0 48px;
-        }
         @include brSpLandscape {
             padding: 21px 0 48px;
         }
