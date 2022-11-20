@@ -5,8 +5,8 @@
     .l-container-fluid {
         width: 1383px;
     }
-    .l-row {
-        @media (min-width: 1920px) {
+    .l-row{
+        @media (min-width: 1920px){
             flex-wrap: nowrap;
         }
     }
